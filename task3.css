@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(194, 207, 203);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    color: #0f0f0f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+button{
+    background-color:rgb(155, 163, 163);
+   
+
+}
+
+input{
+    margin: 8px;
+}
