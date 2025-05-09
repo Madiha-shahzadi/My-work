@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Game</h1>
+    <p>Enter Number between 1-10</p>
+    <input type="number" id="number" placeholder="Enter number">
+    <button onclick="Game()">Check here</button>
+    <p id="message">result</p>
+    <script>
+        function Game(){
+            let random = Math.floor(Math.random()*10+1);
+
+            let number = parseInt(document.getElementById("number").value);
+            let message = document.getElementById("message");
+            if (number === random) {
+                message.innerHTML = "YOU WON!"+ random;
+            
+            } 
+
+            else
+            {
+                message.innerHTML = "COMPUTER WON!";
+            }
+        }
+    </script>
+   
+
+
+</body>
+</html>
