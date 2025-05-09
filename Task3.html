@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+
+    <h1>Graded Quiz</h1>
+    
+  
+    <p><b>Q#1:</b>What is the Capital of Pakistan-----? </p>
+    <input type="radio" id="num1" name="option" value="Correct">Islamabad <br>
+    <input type="radio" id="num2" name="option" value="wrong">Lahore <br>
+    <input type="radio" id="num3" name="option" value="wrong">Faisalabad <br>
+    <input type="radio" id="num4" name="option" value="wrong">Multan<br>
+     <button onclick="Quiz1()" >Check Answer</button>
+<p id ="opt1">RESULT:</p>
+
+
+<p><b> Q#2:</b>Plants receive their nutrients mainly from-----? </p>
+<input type="radio" id="q2num1" name="option" value="wrong">water <br>
+<input type="radio" id="q2num2" name="option" value="wrong">light <br>
+<input type="radio" id="q2num3" name="option" value="correct">Soil <br>
+<input type="radio" id="q2num4" name="option" value="wrong">atmosphere<br>
+ <button onclick="Quiz2()" >Check Answer</button>
+<p id ="opt2">RESULT:</p>
+
+
+<p><b>Q#3:</b>Who is the Father of Geometry? </p>
+<input type="radio" id="q3num1" name="option" value="wrong">Aristotle <br>
+<input type="radio" id="q3num2" name="option" value="wrong">Kepler <br>
+<input type="radio" id="q3num3" name="option" value="wrong">Pythagoras <br>
+<input type="radio" id="q3num4" name="option" value="Correct">Euclid<br>
+ <button onclick="Quiz3()" >Check Answer</button>
+<p id ="opt3">RESULT:</p>
+
+
+<p><b>Q#4:</b>Who is known as the inventor of Artificial Intelligence? </p>
+<input type="radio" id="q4num1" name="option" value="correct">john McCarthy <br>
+<input type="radio" id="q4num2" name="option" value="wrong">Alan Turing <br>
+<input type="radio" id="q4num3" name="option" value="wrong">Charlas Babbage <br>
+<input type="radio" id="q4num4" name="option" value="wrong">None of these<br>
+ <button onclick="Quiz4()" >Check Answer</button>
+<p id ="opt4">RESULT:</p>
+
+
+<p><b>Q#5:</b>Who is the writer of "MUSHAF" </p>
+<input type="radio" id="q5num1" name="option" value="wrong">Fatima <br>
+<input type="radio" id="q5num2" name="option" value="wrong">Kamila <br>
+<input type="radio" id="q5num3" name="option" value="wrong">Umera <br>
+<input type="radio" id="q5num4" name="option" value="Correct">Nimra<br>
+ <button onclick="Quiz5()" >Check Answer</button>
+<p id ="opt5">RESULT:</p>
+
+    <script>
+        function Quiz1() {
+            var options =document.getElementById("opt1");
+            var number1 =document.getElementById("num1").checked;
+            var number2 =document.getElementById("num2").checked;
+            var number3 =document.getElementById("num3").checked;
+            var number4 =document.getElementById("num4").checked;
+            if(number1) {
+                opt1.innerHTML = "Your Answer is Correct";
+                opt1.style.color = "purple";
+            }
+            
+            else if(number2 || number3|| number4){
+                 opt1.innerHTML = "Your Answer is incorrect";
+                 opt1.style.color = "Blue";
+             } 
+              else
+                 {
+                     opt1.innerHTML = "Select an option";
+                     opt1.style.color = "red";
+
+                 }  
+                } 
+                  
+
+                function Quiz2() {
+            var optionss =document.getElementById("opt2");
+            var number1 =document.getElementById("q2num1").checked;
+            var number2 =document.getElementById("q2num2").checked;
+            var number3 =document.getElementById("q2num3").checked;
+            var number4 =document.getElementById("q2num4").checked;
+            if(number3) {
+                opt2.innerHTML = "Your Answer is Correct";
+                  opt2.style.color = "rgb(245, 9, 174)"
+            }
+            else if(number1 || number2|| number4){
+                 opt2.innerHTML = "Your Answer is incorrect";
+                 opt2.style.color = "Blue";
+             }
+                 else
+                 {
+                     opt2.innerHTML = "Select an option";
+                      opt2.style.color = "red";
+
+                 }  
+                }
+
+                function Quiz3() {
+            var optionsss =document.getElementById("opt3");
+            var number1 =document.getElementById("q3num1").checked;
+            var number2 =document.getElementById("q3num2").checked;
+            var number3 =document.getElementById("q3num3").checked;
+            var number4 =document.getElementById("q3num4").checked;
+            if(number4) {
+                opt3.innerHTML = "Your Answer is Correct";
+                  opt3.style.color = "rgb(245, 9, 174)";
+            }
+             else if(number1 || number2|| number3){
+                 opt3.innerHTML = "Your Answer is incorrect";
+                 opt3.style.color = "Blue";
+             }
+                 else
+                 {
+                     opt3.innerHTML = "Select an option";
+                      opt3.style.color = "red";
+
+                 }  
+                }
+
+                function Quiz4() {
+            var optionssss =document.getElementById("opt4");
+            var number1 =document.getElementById("q4num1").checked;
+            var number2 =document.getElementById("q4num2").checked;
+            var number3 =document.getElementById("q4num3").checked;
+            var number4 =document.getElementById("q4num4").checked;
+            if(number1) {
+                opt4.innerHTML = "Your Answer is Correct";
+                  opt4.style.color = "rgb(245, 9, 174)";
+            }
+            
+            else if(number2 || number3|| number4){
+                 opt4.innerHTML = "Your Answer is incorrect";
+                 opt4.style.color = "Blue";
+             }
+                 else
+                 {
+                     opt4.innerHTML = "Select an option";
+                      opt4.style.color = "red";
+
+                 }  
+                }
+
+
+                function Quiz5() {
+            var optionsssss =document.getElementById("opt5");
+            var number1 =document.getElementById("q5num1").checked;
+            var number2 =document.getElementById("q5num2").checked;
+            var number3 =document.getElementById("q5num3").checked;
+            var number4 =document.getElementById("q5num4").checked;
+            if(number4) {
+                opt5.innerHTML = "Your Answer is Correct";
+                  opt5.style.color = "rgb(245, 9, 174)";
+            }
+            else if(number2 || number3|| number1){
+                 opt5.innerHTML = "Your Answer is incorrect";
+                 opt5.style.color = "Blue";
+             }
+                 else
+                 {
+                     opt5.innerHTML = "Select an option";
+                      opt5.style.color = "red";
+
+                 }  
+                }
+    </script>
+</body>
+</html>
